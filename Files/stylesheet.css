@@ -6,3 +6,4 @@ button.btn-outline-success:hover{color:white !important; background-color: #8AEA
 .navbar-nav{margin-right: 40px;}
 .row {margin-top:30px;display: flex;}
 .column {flex: 50%;}
+.logoimg{margin-left:20px;height:50px;}
