@@ -1,8 +1,10 @@
 a.nav-link:active{color:white !important;} 
 a.nav-link:hover {color:#8AEA92 !important; text-decoration:navy ;} 
 button.btn-outline-success:hover{color:white !important; background-color: #8AEA92 !important;}
-#fixedbutton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; 
-}
+#fixedbutton {position: fixed;bottom: 20px;right: 20px; }
+.nav-item{margin-left:35px;}
+.navbar-nav{margin-right: 40px;}
+.circular--square {border-radius: 50%;}
+.row {margin-top:30px;display: flex;}
+.column {flex: 50%;}
+.center {display: block;margin-left: auto;margin-right: auto;border: 3px solid #8AEA92; width: 70%;padding: 10px;}
