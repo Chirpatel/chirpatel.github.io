@@ -1,9 +1,9 @@
-a.nav-link:active{color:white !important;} 
+a.nav-link:active{color:#8AEA92 !important;} 
 a.nav-link:hover {color:#8AEA92 !important; text-decoration:navy ;} 
 button.btn-outline-success:hover{color:white !important; background-color: #8AEA92 !important;}
 #fixedbutton {position: fixed;bottom: 5%;right: 5%; }
 .nav-item{margin-left:35px;}
-.navbar-nav{margin-right: 40px;}
-.row {margin-top:30px;display: flex;}
+.navbar-nav{margin-right: 25px;}
+.row {margin-top:50px;display: flex;}
 .column {flex: 50%;}
 .logoimg{margin-left:20px;height:50px;}
