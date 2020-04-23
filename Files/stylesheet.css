@@ -1,0 +1,8 @@
+a.nav-link:active{color:white !important;} 
+a.nav-link:hover {color:#8AEA92 !important; text-decoration:navy ;} 
+button.btn-outline-success:hover{color:white !important; background-color: #8AEA92 !important;}
+#fixedbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+}
