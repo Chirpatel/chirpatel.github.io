@@ -1,5 +1,8 @@
+a.nav-link{
+    color:white;
+}
 a.nav-link:active{color:#8AEA92 !important;} 
-a.nav-link:hover {color:#8AEA92 !important; text-decoration:navy ;} 
+a.nav-link:hover {color:#8AEA92 !important; text-decoration:white ;} 
 button.btn-outline-success:hover{color:white !important; background-color: #8AEA92 !important;}
 #fixedbutton {position: fixed;bottom: 5%;right: 5%; }
 .nav-item{margin-left:35px;}
