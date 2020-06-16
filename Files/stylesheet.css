@@ -95,6 +95,7 @@ button.btn-outline-success:hover {
     padding: 10px;
     border-radius: 50%;
     overflow: hidden;
+
 }
 
 .partonediv{
@@ -105,10 +106,10 @@ button.btn-outline-success:hover {
     margin: auto;
 }
 .partone{
-    margin:10px;
+    padding:10px;
 }
 .line{
-    width:60px;
+    width:70px;
     height:3px;
     background-color: #8AEA92;
     margin-bottom: 10px;
@@ -130,7 +131,7 @@ button.btn-outline-success:hover {
     opacity:1;
     background-color:#8AEA92;
     cursor: pointer;
-    transition-duration: 0.4s;
+    border:none;
 }
 
 .contactme:hover{
