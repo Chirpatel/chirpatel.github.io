@@ -1,56 +1,68 @@
 @font-face {
     font-family: myFirstFont;
     src: url('./Fonts/AnonymousPro-Regular.ttf');
-  }
+}
+
 @font-face {
     font-family: myFirstFontBold;
     src: url('./Fonts/AnonymousPro-Bold.ttf');
-  }
-body{
+}
+
+:root {
+    --main-color: #00e5e5;
+    --card-color: #eeeeee;
+    --card-highlight: #393e46;
+}
+
+body {
     font-family: myFirstFont;
     background-color: black;
     height: 100%;
 }
+
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px black; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
     border-radius: 5px;
-    
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:#8AEA92; 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
     border-radius: 10px;
-    
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #8AEA92; 
-  }
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
 .nav-link {
     color: white;
 }
 
 a.active {
-    color: #8AEA92 !important;
+    color: var(--main-color) !important;
 }
 
 .nav-link:hover {
-    color: #8AEA92 !important;
+    color: var(--main-color) !important;
     text-decoration: white;
 }
-button.btn-outline-success{
-    background-color:black;
+
+button.btn-outline-success {
+    background-color: black;
 }
+
 button.btn-outline-success:hover {
     color: black !important;
-    background-color: #8AEA92 !important;
+    background-color: var(--main-color) !important;
 }
 
 #fixedbutton {
@@ -62,7 +74,7 @@ button.btn-outline-success:hover {
 }
 
 .nav-item {
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 .navbar-nav {
@@ -90,152 +102,544 @@ button.btn-outline-success:hover {
 .profile {
     display: block;
     margin: auto;
-    width: 60%;
-
+    width: 90%;
+    padding: 5px;
 }
 
-.partonediv{
+.partonediv {
     height: 100%;
     display: grid;
     align-items: center;
-    color:white;
+    color: white;
     margin: auto;
     width: 80%;
 }
-.partone{
-    padding:10px;
+
+.partone {
+    padding: 10px;
 }
-.line,.line1{
-    height:3px;
-    background-color: #8AEA92;
+
+.line,
+.line1,
+.line2,
+.line3,
+.line4 {
+    height: 3px;
+    background-color: var(--main-color);
     margin-bottom: 10px;
 }
-.line{
-    width:70px;
-}
-.line1{
-    width:80px;
+
+.line {
+    width: 70px;
 }
 
-.partone>H1{
-    font-size:60px;
+.line1 {
+    margin: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
 }
-.partone>a{
+
+.line2 {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.line3 {
+    width: 120px;
+}
+
+
+.partone>H1 {
+    font-size: 60px;
+}
+
+.partone>a {
     outline: none;
 }
-.contactme{
+
+.contactme,
+.moreprojects>a>button {
     font-family: myFirstFontBold;
-    font-size:18px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 30px;
-    width:200px;
-    height:30px;
-    border-radius:5px;
-    opacity:1;
-    background-color:#8AEA92;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: var(--main-color);
     cursor: pointer;
-    border:none;
+    border: none;
 }
 
-.contactme:hover{
-    opacity:0.8;
+.contactme:hover {
+    opacity: 0.8;
 }
 
-.handleicon>a{
- margin:7px;
- cursor: pointer;
- text-decoration: none;
+.handleicon>a {
+    margin: 7px;
+    cursor: pointer;
+    text-decoration: none;
 }
-.handleicon>a>i{
+
+.handleicon>a>i {
     color: #ffffff;
 }
-.handleicon>a>i:hover{
-    opacity:0.8;
-    color:whitesmoke;
+
+.handleicon>a>i:hover {
+    opacity: 0.8;
+    color: var(--card-color);
 }
 
 h2 {
-    margin:0px;
+    margin: 0px;
 }
 
 
-.parttwo{
-    color:white;
-    margin:10px;
-    border-top:3px solid #8AEA92;
+.parttwo {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.skills {
+    display: grid;
+}
+
+.skillstopic {
     margin: auto;
-    width: 90%;
 }
-.skills{
-    height: 100%;
-    display: grid;
-    margin:auto;
-    margin-top:40px;
-}
-.skillstopic{
-    height: 100%;
-    display: grid;
-    margin:auto;
-    align-items: center;
-}
-.skillstopic>span{
-    font-size:40px;
+
+.skillstopic>span {
+    font-size: 40px;
     font-family: myFirstFontBold;
 }
-.topics{
+
+.topics {
     font-family: myFirstFontBold;
     display: inline-block;
-    border-radius: 5px;
-    background-color:white;
+    border-radius: 7px;
+    background-color: whitesmoke;
     color: black;
     text-align: center;
-    font-size:20px;
-    padding : 5px;
-    margin:5px;
+    font-size: 20px;
+    padding: 0px 10px;
+    margin: 5px 1.5px;
     transition-duration: 0.3s;
 }
 
-.topics:hover{
-    background-color:#8AEA92;
+.topics:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
 }
-.skillsrows{
-margin:auto;
-align-items: center;
-height:100%;
+
+.skillsrows>div>span {
+    font-size: 30px;
+}
+
+.skillsrows {
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.partthree,
+.partfour,
+.partfive {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.exptopicname>span {
+    font-size: 40px;
+    font-family: myFirstFontBold;
+}
+
+.Exptopic {
+    display: grid;
+}
+
+.exptopicname,
+.expcard {
+    margin: auto;
+}
+
+.line4 {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.expcard {
+    margin-top: 20px;
+}
+
+.card1 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--card-color);
+    margin: 10px !important;
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid var(--card-highlight);
+    color: black;
+    box-shadow: 0 2px 12px 0 var(--main-color);
+}
+
+.card1:hover {
+    box-shadow: None;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.card1>h1 {
+    font-size: 30px;
+    font-family: myFirstFontBold;
+}
+
+.card1>h2 {
+    font-size: 20px;
+}
+
+.projectstopic,
+.eductionstopic {
+    display: grid;
+}
+
+.projectname,
+.educationname {
+    margin: auto;
+}
+
+.projectname>span,
+.educationname>span {
+    font-size: 40px;
+    font-family: myFirstFontBold;
+}
+
+.prows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    color: black;
+}
+
+.pcard1 {
+    height: 450px;
+    width: 18rem;
+    background-color: var(--card-color);
+    margin: 10px !important;
+    display: grid;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid var(--card-highlight);
+    box-shadow: 0 2px 12px 0 var(--main-color);
+}
+
+.pcard1:hover {
+    box-shadow: None;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+.section1,
+.section2,
+.section3 {
+    margin: 0px auto;
+
+}
+
+.section1 {
+    font-size: 30px;
+    font-family: myFirstFontBold;
+
+}
+
+.section3 {
+    margin: 5px;
+}
+
+.subtopics {
+    background-color: var(--card-highlight);
+    opacity: 0.7;
+    color: white;
+}
+
+.section2>p {
+    text-align: justify;
+}
+
+.subtopics {
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 0px 3px;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.section4 {
+    height: 20px;
+}
+
+.section4>a {
+    text-decoration: none;
+}
+
+.section4>a>i {
+    color: black;
+    margin: 5px;
+}
+
+.main {
+    width: 100%;
+}
+
+.moreprojects {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.content>h2 {
+    font-family: myFirstFontBold;
+}
+
+
+@media (min-width:991px) {
+    .main {
+        height: -webkit-fill-available;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .profile{
-        width:60%
+    .profile {
+        width: 80%
     }
+
     .partone>H1 {
         font-size: 30px;
     }
+    .navbar-nav {
+        margin-right: none;
+    }
     h2 {
         font-size: 1rem;
-        margin:0px;
+        margin: 0px;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 16px;
     }
+
     .logoimg {
         margin-left: 10px;
         height: 40px;
     }
-  }
+}
 
-  @media (min-width: 601px) and (max-width: 991px) {
-    .profile{
-        width:50%
+@media (min-width: 601px) and (max-width: 991px) {
+    .profile {
+        width: 70%
+    }
+    .navbar-nav {
+        margin-right: none;
     }
     .partone>H1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 1.5rem;
     }
+
     .logoimg {
         margin-left: 15px;
         height: 45px;
     }
-  }
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 10px auto;
+    color: black;
+    font-family: myFirstFont;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid var(--main-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -13px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container1 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+
+.end {
+    color: black;
+    background-color: whitesmoke;
+    display: grid;
+    margin-top: 40px;
+    padding:20px;
+}
+
+.endtopic,.endtext{
+    margin: auto;
+}
+.endtext{
+    margin-top:10px;
+}
+
+.endtopic>span{
+    font-size:40px;
+    font-family: myFirstFontBold;
+}
+
+.line5 {
+    height: 3px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.line5 {
+    margin: auto;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.endtext>p{
+   text-align: center;
+   font-size: 20px;
+}
