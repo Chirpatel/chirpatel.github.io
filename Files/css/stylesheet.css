@@ -70,7 +70,7 @@ button.btn-outline-success:hover {
     position: fixed;
     bottom: 5%;
     right: 3%;
-    color:white;
+    color: white;
 }
 
 .nav-item {
@@ -162,7 +162,8 @@ button.btn-outline-success:hover {
 }
 
 .contactme,
-.moreprojects>a>button,.knownmore>a>button {
+.moreprojects>a>button,
+.knownmore>a>button {
     font-family: myFirstFontBold;
     font-size: 18px;
     margin-top: 20px;
@@ -174,11 +175,11 @@ button.btn-outline-success:hover {
     background-color: var(--main-color);
     cursor: pointer;
     border: none;
-    opacity:0.8;
+    opacity: 0.8;
 }
 
 .contactme:hover {
-    opacity:1;
+    opacity: 1;
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
@@ -337,11 +338,11 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top:20px;
+    margin-top: 20px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     color: black;
-    
+
 }
 
 .pcard1 {
@@ -376,12 +377,12 @@ h2 {
 .section1 {
     font-size: 30px;
     font-family: myFirstFontBold;
-    height:90px;
+    height: 90px;
 }
 
 .section3 {
     margin: 5px;
-    height:39px;
+    height: 39px;
 }
 
 .subtopics {
@@ -392,7 +393,7 @@ h2 {
 
 .section2>p {
     text-align: justify;
-    height:240px;
+    height: 240px;
 }
 
 .subtopics {
@@ -417,7 +418,8 @@ h2 {
     color: black;
     margin: 5px;
 }
-.section4>a>i:hover{
+
+.section4>a>i:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
@@ -434,21 +436,26 @@ h2 {
     margin-right: auto;
     margin-bottom: 30px;
 }
-.moreprojects>a>button:hover,.knownmore>a>button:hover{
-    opacity:1;
+
+.moreprojects>a>button:hover,
+.knownmore>a>button:hover {
+    opacity: 1;
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     cursor: pointer;
 }
+
 .content>h2 {
     font-family: myFirstFontBold;
 }
-.knownmore{
-    display:grid;
+
+.knownmore {
+    display: grid;
 }
-.knownmore>a{
-    margin:0px auto;
+
+.knownmore>a {
+    margin: 0px auto;
 
 }
 
@@ -457,18 +464,20 @@ h2 {
     background-color: var(--card-color);
     display: grid;
     margin-top: 40px;
-    padding:20px;
+    padding: 20px;
 }
 
-.endtopic,.endtext{
+.endtopic,
+.endtext {
     margin: auto;
 }
-.endtext{
-    margin-top:10px;
+
+.endtext {
+    margin-top: 10px;
 }
 
-.endtopic>span{
-    font-size:40px;
+.endtopic>span {
+    font-size: 40px;
     font-family: myFirstFontBold;
 }
 
@@ -485,22 +494,24 @@ h2 {
     margin-right: auto;
     margin-bottom: 5px;
 }
-.endtext>p{
-   text-align: center;
-   font-size: 20px;
+
+.endtext>p {
+    text-align: center;
+    font-size: 20px;
 }
 
 
-.research{
+.research {
     background-color: var(--card-color);
-    color:black;
+    color: black;
     padding: 10px;
-    margin:20px auto;
+    margin: 20px auto;
     border-radius: 5px;
     border: 3px solid var(--card-highlight);
     box-shadow: 0 2px 12px 0 var(--main-color);
-    width:50%;
+    width: 50%;
 }
+
 .research:hover {
     box-shadow: None;
     -webkit-transform: scale(1.05);
@@ -510,48 +521,58 @@ h2 {
     cursor: default;
 
 }
-.research>span{
-    font-size:30px;
+
+.research>span {
+    font-size: 30px;
     font-family: myFirstFontBold;
     line-height: 1.1;
 }
-.research>p{
+
+.research>p {
     text-align: justify;
 }
-.research>a{
-    color:black;
+
+.research>a {
+    color: black;
 }
-.research>a:hover{
+
+.research>a:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.2s ease;
     cursor: pointer;
 }
-.contacticon{
-    display:flex;
+
+.contacticon {
+    display: flex;
 }
-.contacticon>a{
+
+.contacticon>a {
     text-decoration: none;
-    color:black;
-    margin:auto;
+    color: black;
+    margin: auto;
 }
-.contacticon>a:hover{
+
+.contacticon>a:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.2s ease;
 }
+
 @media (min-width:991px) {
     .main {
         height: -webkit-fill-available;
     }
 }
+
 @media (max-width:1130px) {
     .navbar {
-        font-size:15px;
+        font-size: 15px;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .profile {
         width: 80%
@@ -560,16 +581,20 @@ h2 {
     .partone>H1 {
         font-size: 30px;
     }
+
     .navbar-nav {
         margin-right: none;
     }
+
     h2 {
         font-size: 1rem;
         margin: 0px;
     }
-    .research{
-        width:100%;
+
+    .research {
+        width: 100%;
     }
+
     .nav-link {
         font-size: 16px;
     }
@@ -584,15 +609,19 @@ h2 {
     .profile {
         width: 70%
     }
+
     .navbar-nav {
         margin-right: none;
     }
+
     .partone>H1 {
         font-size: 50px;
     }
-    .research{
-        width:100%;
+
+    .research {
+        width: 100%;
     }
+
     h2 {
         font-size: 1.5rem;
     }
@@ -734,7 +763,7 @@ h2 {
     }
 }
 
-.preload{
+.preload {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -744,7 +773,7 @@ h2 {
     z-index: 9999;
 }
 
-.preload >img{ 
+.preload>img {
     width: 40px;
     height: 40px;
     position: fixed;
