@@ -31,3 +31,15 @@ $(document).ready(function(){
     });
   });
 
+var isVisible = false;
+$('#fixedbutton').hide();
+$(window).scroll(function(){
+      var shouldBeVisible = $(window).scrollTop()>200;
+      if (shouldBeVisible && !isVisible) {
+          isVisible = true;
+          $('#fixedbutton').show();
+      } else if (isVisible && !shouldBeVisible) {
+          isVisible = false;
+          $('#fixedbutton').hide();
+    }
+});

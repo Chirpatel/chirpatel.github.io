@@ -70,7 +70,7 @@ button.btn-outline-success:hover {
     position: fixed;
     bottom: 5%;
     right: 3%;
-    color: white;
+    color: var(--main-color);
 }
 
 .nav-item {
