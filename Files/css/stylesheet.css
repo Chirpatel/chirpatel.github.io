@@ -1,11 +1,11 @@
 @font-face {
     font-family: myFirstFont;
-    src: url('./Fonts/AnonymousPro-Regular.ttf');
+    src: url('../Fonts/AnonymousPro-Regular.ttf');
 }
 
 @font-face {
     font-family: myFirstFontBold;
-    src: url('./Fonts/AnonymousPro-Bold.ttf');
+    src: url('../Fonts/AnonymousPro-Bold.ttf');
 }
 
 :root {
