@@ -8,29 +8,34 @@ function toggle(){
 }
 function move(){
     var hash = '#'+window.location.hash.substr(1);
-    console.log(hash);
+    window.location.hash = '';
+    //console.log(hash);
+    if(hash.charAt(1)=='1'){
+      hash='#'+hash.substr(2);
+    }
     if (hash !== "#") {
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
-          window.location.hash = hash;
+          //window.location.hash = hash;
         });
       }
 }
 $(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
-        event.preventDefault();
         var hash = this.hash;
+        if(hash.charAt(1)!='1'){
+        event.preventDefault();
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
-          window.location.hash = hash;
+          //window.location.hash = hash;
         });
+      }
       }
     });
   });
-
 var isVisible = false;
 $('#fixedbutton').hide();
 $(window).scroll(function(){
