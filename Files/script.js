@@ -1,5 +1,6 @@
 function fadeout(){
     $(".preload").fadeOut(1000);
+    $('body,html').css('overflow','visible');
     move();
 }
 function toggle(){

@@ -13,7 +13,8 @@
   <link href="Files/stylesheet.css" rel="stylesheet" type="text/css" />
 </Head>
 
-<Body>
+<Body onload = 'fadeout()'>
+  <div class="preload"><img src="./Files/img/loader.gif"></div>
   <nav class="navbar  navbar-expand-lg ">
     <a class="navbar-brand" href="/"><img class="logoimg" src="Files/img/Logo.png" alt="logo"></a>
     <button onClick="toggle()" style='outline: none;' class=" navbar-toggler" type="button" data-toggle="collapse"
@@ -29,25 +30,25 @@
           <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" href="/#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link" href="/#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="/#projects">Projects</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Research</a>
+            <a class="nav-link" href="/#research">Research</a>
           </li>
         <li class="nav-item">
           <a class="nav-link active" href="./aboutme.html">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" target="_blank" href="Files/Chir Resume.pdf">Download</a>
+          <a class="nav-link" target="_blank" href="Files/Chir Resume.pdf">Resume</a>
         </li>
 
       </ul>
@@ -92,7 +93,7 @@
       </div>
   </div>
 </div>
-<div class="end">
+<div id='contact' class="end">
   <div class="endtopic">
     <span>Contact</span>
     <div class="line5"></div>
@@ -119,11 +120,9 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="Files/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
