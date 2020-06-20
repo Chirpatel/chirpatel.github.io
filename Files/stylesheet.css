@@ -47,7 +47,7 @@ body {
     color: white;
 }
 
-a.active {
+.active {
     color: var(--main-color) !important;
 }
 
@@ -74,7 +74,7 @@ button.btn-outline-success:hover {
 }
 
 .nav-item {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .navbar-nav {
@@ -162,7 +162,7 @@ button.btn-outline-success:hover {
 }
 
 .contactme,
-.moreprojects>a>button {
+.moreprojects>a>button,.knownmore>a>button {
     font-family: myFirstFontBold;
     font-size: 18px;
     margin-top: 20px;
@@ -174,10 +174,15 @@ button.btn-outline-success:hover {
     background-color: var(--main-color);
     cursor: pointer;
     border: none;
+    opacity:0.8;
 }
 
 .contactme:hover {
-    opacity: 0.8;
+    opacity:1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .handleicon>a {
@@ -230,11 +235,12 @@ h2 {
     padding: 0px 10px;
     margin: 5px 1.5px;
     transition-duration: 0.3s;
+    cursor: default;
 }
 
 .topics:hover {
     background-color: var(--main-color);
-    cursor: pointer;
+    cursor: default;
 }
 
 .skillsrows>div>span {
@@ -299,7 +305,7 @@ h2 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.2s ease;
-    cursor: pointer;
+    cursor: default;
 }
 
 .card1>h1 {
@@ -336,7 +342,7 @@ h2 {
 }
 
 .pcard1 {
-    height: 450px;
+    height: 462px;
     width: 18rem;
     background-color: var(--card-color);
     margin: 10px !important;
@@ -367,11 +373,12 @@ h2 {
 .section1 {
     font-size: 30px;
     font-family: myFirstFontBold;
-
+    height:90px;
 }
 
 .section3 {
     margin: 5px;
+    height:39px;
 }
 
 .subtopics {
@@ -382,6 +389,7 @@ h2 {
 
 .section2>p {
     text-align: justify;
+    height:240px;
 }
 
 .subtopics {
@@ -416,18 +424,104 @@ h2 {
     margin-right: auto;
     margin-bottom: 30px;
 }
-
+.moreprojects>a>button:hover,.knownmore>a>button:hover{
+    opacity:1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .content>h2 {
     font-family: myFirstFontBold;
 }
+.knownmore{
+    display:grid;
+}
+.knownmore>a{
+    margin:0px auto;
 
+}
+
+.end {
+    color: black;
+    background-color: var(--card-color);
+    display: grid;
+    margin-top: 40px;
+    padding:20px;
+}
+
+.endtopic,.endtext{
+    margin: auto;
+}
+.endtext{
+    margin-top:10px;
+}
+
+.endtopic>span{
+    font-size:40px;
+    font-family: myFirstFontBold;
+}
+
+.line5 {
+    height: 3px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.line5 {
+    margin: auto;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.endtext>p{
+   text-align: center;
+   font-size: 20px;
+}
+
+
+.research{
+    background-color: var(--card-color);
+    color:black;
+    padding: 10px;
+    margin:20px auto;
+    border-radius: 5px;
+    border: 3px solid var(--card-highlight);
+    box-shadow: 0 2px 12px 0 var(--main-color);
+    width:50%;
+}
+.research:hover {
+    box-shadow: None;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+.research>span{
+    font-size:30px;
+    font-family: myFirstFontBold;
+    line-height: 1.1;
+}
+.research>p{
+    text-align: justify;
+}
+.research>a{
+    color:black;
+}
 
 @media (min-width:991px) {
     .main {
         height: -webkit-fill-available;
     }
 }
-
+@media (max-width:1130px) {
+    .navbar {
+        font-size:15px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .profile {
         width: 80%
@@ -443,7 +537,9 @@ h2 {
         font-size: 1rem;
         margin: 0px;
     }
-
+    .research{
+        width:100%;
+    }
     .nav-link {
         font-size: 16px;
     }
@@ -464,7 +560,9 @@ h2 {
     .partone>H1 {
         font-size: 50px;
     }
-
+    .research{
+        width:100%;
+    }
     h2 {
         font-size: 1.5rem;
     }
@@ -606,40 +704,3 @@ h2 {
 }
 
 
-.end {
-    color: black;
-    background-color: whitesmoke;
-    display: grid;
-    margin-top: 40px;
-    padding:20px;
-}
-
-.endtopic,.endtext{
-    margin: auto;
-}
-.endtext{
-    margin-top:10px;
-}
-
-.endtopic>span{
-    font-size:40px;
-    font-family: myFirstFontBold;
-}
-
-.line5 {
-    height: 3px;
-    background-color: black;
-    margin-bottom: 10px;
-}
-
-.line5 {
-    margin: auto;
-    width: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-}
-.endtext>p{
-   text-align: center;
-   font-size: 20px;
-}
