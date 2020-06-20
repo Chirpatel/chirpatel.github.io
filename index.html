@@ -14,7 +14,7 @@
 </Head>
 
 <Body>
-  <nav class="navbar  navbar-expand-lg ">
+  <nav id="main" class="navbar  navbar-expand-lg ">
     <a class="navbar-brand" href="/"><img class="logoimg" src="Files/img/Logo.png" alt="logo"></a>
     <button onClick="toggle()" style='outline: none;' class=" navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
@@ -29,23 +29,23 @@
           <a class="nav-link active" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Research</a>
+          <a class="nav-link" href="#research">Research</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./aboutme.html">About Me</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" target="_blank" href="Files/Chir Resume.pdf">Download</a>
@@ -54,11 +54,10 @@
       </ul>
     </div>
   </nav>
-  <!--<div>
-    <a target="_blank" href="Files/Chir Resume.pdf"><button type="button" class="btn btn-outline-success btn-lg"
-        id="fixedbutton">Download Resume</button></a>
-  </div>-->
-  <div class="main d-flex flex-column-reverse flex-lg-row flex-xl-row " >
+  <div>
+    <a href="#main"><i id="fixedbutton" class="far fa-2x fa-arrow-alt-circle-up"></i></a>
+  </div>
+  <div  class="main d-flex flex-column-reverse flex-lg-row flex-xl-row " >
     <div class="p-2 justify-content-center partonediv" style="width: 100%;">
       <div class='partone'>
         <div class='line'></div>
@@ -66,7 +65,7 @@
         <H2>Full Stack Developer and </H2>
         <H2>Machine Learning Enthusiast</H2>
 
-        <a href='#'><button style='outline: none;' class="contactme">Contact Me</button></a>
+        <a href='#contact'><button style='outline: none;' class="contactme">Contact Me</button></a>
         <div class='handleicon'>
           <a target="_blank" href='https://github.com/Chirpatel'><i class="fab fa-2x fa-github"></i></a>
           <a target="_blank" href='https://www.linkedin.com/in/chir-patel-b4762b172/'><i
@@ -83,8 +82,8 @@
     </div>
   </div>
 
-  <div class='line1'></div>
-  <div class='parttwo container'>
+  <div id="skills" class='line1'></div>
+  <div  class='parttwo container'>
     <div class='skills'>
       <div class='skillstopic'>
         <span>Skills</span>
@@ -121,7 +120,7 @@
       </div>
     </div>
   </div>
-  <div class='line1'></div>
+  <div id='experience' class='line1'></div>
   <div class='partthree container'>
     <div class="Exptopic">
       <div class="exptopicname">
@@ -139,7 +138,7 @@
     </div>
   </div>
 
-  <div class='line1'></div>
+  <div id ='projects' class='line1'></div>
   <div class='partfour container'>
     <div class='projectstopic'>
       <div class="projectname">
@@ -238,7 +237,7 @@
       </div>
   </div>
 </div>-->
-<div class='line1'></div>
+<div id='research' class='line1'></div>
 <div class='partfive container'>
   <div class='eductionstopic'>
     <div class="educationname">
@@ -256,7 +255,7 @@
 <div class='knownmore'>
   <a href='./aboutme.html'><button style='outline: none;'>Know More</button></a>
 </div>
-<div class="end">
+<div id='contact' class="end">
   <div class="endtopic">
     <span>Contact</span>
     <div class="line5"></div>
@@ -264,6 +263,13 @@
   <div class='endtext'>
     <p><span>8200394603</span><br/>
     <span>chirpatel2@gmail.com</span></p>
+    <div class='contacticon'>
+      <a target="_blank" href='https://github.com/Chirpatel'><i class="fab fa-2x fa-github"></i></a>
+      <a target="_blank" href='https://www.linkedin.com/in/chir-patel-b4762b172/'><i class="fab fa-2x fa-linkedin"></i></a>
+      <a target="_blank" href='https://www.hackerrank.com/chirpatel'><i class="fab fa-2x fa-hackerrank"></i></a>
+      <a target="_blank" href='https://www.instagram.com/0316_chir/'><i class="fab fa-2x fa-instagram"></i></a>
+      <a target="_blank" href='https://www.facebook.com/patel.chir.0316'><i class="fab fa-2x fa-facebook"></i></a>
+    </div>
   </div>
 
   
@@ -276,11 +282,10 @@
 
 
 
-
-  <script src="Files/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </script>
+  <script src="Files/script.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>

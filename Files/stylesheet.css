@@ -69,8 +69,7 @@ button.btn-outline-success:hover {
     position: fixed;
     bottom: 5%;
     right: 3%;
-    font-family: myFirstFontBold;
-    font-size: unset;
+    color:white;
 }
 
 .nav-item {
@@ -359,7 +358,7 @@ h2 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.2s ease;
-    cursor: pointer;
+    cursor: default;
 
 }
 
@@ -403,6 +402,7 @@ h2 {
 
 .section4 {
     height: 20px;
+    cursor: pointer;
 }
 
 .section4>a {
@@ -412,6 +412,12 @@ h2 {
 .section4>a>i {
     color: black;
     margin: 5px;
+}
+.section4>a>i:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
 }
 
 .main {
@@ -497,7 +503,7 @@ h2 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     transition: 0.2s ease;
-    cursor: pointer;
+    cursor: default;
 
 }
 .research>span{
@@ -511,7 +517,27 @@ h2 {
 .research>a{
     color:black;
 }
-
+.research>a:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.contacticon{
+    display:flex;
+}
+.contacticon>a{
+    text-decoration: none;
+    color:black;
+    margin:auto;
+}
+.contacticon>a:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
 @media (min-width:991px) {
     .main {
         height: -webkit-fill-available;
@@ -667,6 +693,7 @@ h2 {
     position: relative;
     border-radius: 6px;
 }
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
