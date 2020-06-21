@@ -50,6 +50,7 @@ body {
 
 .active {
     color: var(--main-color) !important;
+    pointer-events: none;
 }
 
 .nav-link:hover {
@@ -340,15 +341,14 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     color: black;
+    justify-content: center;
 
 }
 
 .pcard1 {
     height: 462px;
-    width: 18rem;
+    width: 19rem;
     background-color: var(--card-color);
     margin: 10px !important;
     display: grid;
