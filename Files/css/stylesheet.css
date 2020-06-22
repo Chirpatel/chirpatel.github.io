@@ -347,7 +347,7 @@ h2 {
 }
 
 .pcard1 {
-    height: 462px;
+    height: 480px;
     width: 19rem;
     background-color: var(--card-color);
     margin: 10px !important;
@@ -357,7 +357,6 @@ h2 {
     border: 3px solid var(--card-highlight);
     box-shadow: 0 2px 12px 0 var(--main-color);
 }
-
 .pcard1:hover {
     box-shadow: None;
     -webkit-transform: scale(1.05);
