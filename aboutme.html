@@ -18,7 +18,7 @@
 <Body onload='fadeout()'>
   <div class="preload"><img src="./Files/img/loader.gif"></div>
   <nav id="main" class="navbar  navbar-expand-lg ">
-    <a class="navbar-brand" href="/"><img class="logoimg" src="Files/img/Logo.png" alt="logo"></a>
+    <a class="navbar-brand icon" href="/"><span>< </span>Chir <span>/></span></a>
     <button onClick="toggle()" style='outline: none;' class=" navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
       aria-label="Toggle navigation">
@@ -58,7 +58,20 @@
     </div>
   </nav>
   <div>
-    <a href="#main"><i id="fixedbutton" class="far fa-2x fa-arrow-alt-circle-up"></i></a>
+    <a href="#main"><i id="fixedbutton1" class="far fa-2x fa-arrow-alt-circle-up"></i></a>
+    <a href="#1"><i id="fixedbutton2" class="fas fa-2x fa-palette"></i></a>
+  </div>
+  <div id='box' class="box" >
+    <form class="buttons">
+      <ul>
+      <li style="margin-top:3px;"><input type="button" class="color" id="neonblue" onclick="changeColor('#00e5e5');"></input></li>
+      <li><input type="button" class="color" id="neongreen" onclick="changeColor('#39ff14');"></input></li>
+      <li><input type="button" class="color" id="neonpink" onclick="changeColor('#ff6ec7');"></input></li>
+      <li><input type="button" class="color" id="yellow" onclick="changeColor('#FFFF00');"></input></li>
+      <li><input type="button" class="color" id="red" onclick="changeColor('#ff073a');"></input></li>
+      <li><input type="button" class="color" id="purple" onclick="changeColor('#bc13fe');"></input></li>
+      </ul>
+    </form>
   </div>
   <div class='partsix container'>
     <div class="abouttopic">

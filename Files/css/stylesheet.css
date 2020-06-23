@@ -66,11 +66,28 @@ button.btn-outline-success:hover {
     color: black !important;
     background-color: var(--main-color) !important;
 }
+.icon{
+    color:white;
+    text-decoration: none;
+    font-size:25px;
+    font-weight: 600;
+}
+.icon:hover{
+    color:white;
+}
+.icon>span{
+    color: var(--main-color) !important;
+}
 
-#fixedbutton {
+#fixedbutton2{
+    right:3%;
+}
+#fixedbutton1{
+right: 7%;
+}
+#fixedbutton1,#fixedbutton2 {
     position: fixed;
     bottom: 5%;
-    right: 3%;
     color: var(--main-color);
 }
 
@@ -645,6 +662,17 @@ th,td{
         margin-left: 10px;
         height: 40px;
     }
+    #fixedbutton1{
+        right:1%;
+    }
+    #fixedbutton2{
+        bottom: 14%;
+        right: 1%;
+    }
+    div.box{
+        right:1% !important;
+        bottom:125px !important;   
+    }
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
@@ -676,6 +704,9 @@ th,td{
     .logoimg {
         margin-left: 15px;
         height: 45px;
+    }
+    #fixedbutton1{
+        right:10%;
     }
 }
 
@@ -829,3 +860,65 @@ th,td{
     margin-top: -20px;
     margin-left: -20px;
 }
+
+div.box {
+    position: fixed;
+    border: none;
+    border-radius:25px;
+    right:3%;
+    bottom:65px;
+    display:none;
+  }
+  
+  form.buttons {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+  }
+  form.buttons ul{
+    padding-inline-start:0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  form.buttons li{
+    
+    list-style:none;
+  }
+  input.color {
+    -webkit-appearance: none; /* for Safari */
+    -webkit-border-radius: 0; /* for Safari */
+      color: #333333;
+      font-family: Courier, monospace;
+      outline: none;
+      text-align: left;
+  
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      border: none;
+    border-radius: 25px
+  }
+  
+  input#neonblue {
+  
+      background-color: #00e5e5;
+  }
+  
+  input#neongreen {
+      background-color: #39ff14;
+  }
+  
+  input#neonpink {
+      background-color: #ff6ec7;
+  }
+  
+  input#yellow {
+      background-color: #FFFF00;
+  }
+  
+  input#red {
+      background-color:#ff073a;
+  }
+  input#purple {
+      background-color:#bc13fe;
+  }

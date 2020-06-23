@@ -37,14 +37,23 @@ $(document).ready(function(){
     });
   });
 var isVisible = false;
-$('#fixedbutton').hide();
+$('#fixedbutton1').hide();
 $(window).scroll(function(){
       var shouldBeVisible = $(window).scrollTop()>200;
       if (shouldBeVisible && !isVisible) {
           isVisible = true;
-          $('#fixedbutton').show();
+          $('#fixedbutton1').show();
       } else if (isVisible && !shouldBeVisible) {
           isVisible = false;
-          $('#fixedbutton').hide();
+          $('#fixedbutton1').hide();
     }
+});
+let root = document.documentElement;
+function changeColor(color) {
+  root.style.setProperty('--main-color', color);
+}
+$(document).ready(function(){
+  $("#fixedbutton2").click(function(){
+    $("#box").slideToggle();
+  });
 });
