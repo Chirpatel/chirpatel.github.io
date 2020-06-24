@@ -78,7 +78,14 @@ button.btn-outline-success:hover {
 .icon>span{
     color: var(--main-color) !important;
 }
-
+.back{
+    position: absolute;
+    content:' ';
+    background-color:var(--main-color) !important;
+    height:387.84px;
+    width:433.632px;
+    border-radius:50%;
+}
 #fixedbutton2{
     right:3%;
 }
@@ -119,18 +126,28 @@ right: 7%;
 
 .profile {
     display: block;
+    position: relative;
     margin: auto;
-    width: 90%;
-    padding: 5px;
+    width: -webkit-fill-available;
+    top: -25px;
 }
-
+.innerimg{
+    width:80%;
+    height:79%;
+    overflow:hidden;
+    box-shadow: 25px 0 0 0 var(--main-color);
+    border-radius:50%;
+    margin-left:70px;
+}
 .partonediv {
     height: 100%;
     display: grid;
     align-items: center;
     color: white;
     margin: auto;
-    width: 80%;
+    width: 60%;
+    padding:50px!important;
+    
 }
 
 .partone {
@@ -623,8 +640,21 @@ th,td{
 }
 
 @media only screen and (max-width: 600px) {
+    
     .profile {
-        width: 80%
+        display: block;
+        position: relative;
+        margin: auto;
+        width: -webkit-fill-available;
+        top: -20px;
+    }
+    .innerimg{
+        width:80%;
+        height:79%;
+        overflow:hidden;
+        box-shadow: 15px 0 0 0 var(--main-color);
+        border-radius:50%;
+        margin:0px auto;
     }
     .aboutdesp>p {
         text-align: justify;
@@ -673,11 +703,26 @@ th,td{
         right:1% !important;
         bottom:125px !important;   
     }
+    .partonediv{
+        padding: 10px!important;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
     .profile {
-        width: 70%
+        display: block;
+        position: relative;
+        margin: auto;
+        width: -webkit-fill-available;
+        top: -40px;
+    }
+    .innerimg{
+        width:80%;
+        height:79%;
+        overflow:hidden;
+        box-shadow: 30px 0 0 0 var(--main-color);
+        border-radius:50%;
+        margin:auto;
     }
     .aboutdesp>p {
         text-align: justify;
@@ -905,7 +950,7 @@ div.box {
   }
   
   input#neongreen {
-      background-color: #39ff14;
+      background-color: #42f940;
   }
   
   input#neonpink {
@@ -913,12 +958,12 @@ div.box {
   }
   
   input#yellow {
-      background-color: #FFFF00;
+      background-color: #FFF857;
   }
   
   input#red {
-      background-color:#ff073a;
+      background-color:#FD1C03;
   }
   input#purple {
-      background-color:#bc13fe;
+      background-color:#BE00FE;
   }
