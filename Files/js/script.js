@@ -49,7 +49,7 @@ $(document).ready(function(){
       if (this.hash !== "" ) {
         var hash = this.hash;
         //console.log(hash);
-        console.log(hash);
+        //console.log(hash);
         if(this.hash=='#pallete'){
           event.preventDefault();
           window.location.hash='';
