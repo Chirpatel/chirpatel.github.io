@@ -43,6 +43,9 @@ function move(){
       }
 }
 $(document).ready(function(){
+  color();
+  //$('.loader').toggle();
+  $('.loader').fadeIn(1);
     $("a").on('click', function(event) {
       if (this.hash !== "") {
         var hash = this.hash;
