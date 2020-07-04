@@ -47,7 +47,7 @@ $(document).ready(function(){
       if (this.hash !== "") {
         var hash = this.hash;
         //console.log(hash);
-        if(hash.charAt(1)!='1'&& hash!='#palette'){
+        if(hash.charAt(1)!='1'){
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $(hash).offset().top
@@ -91,12 +91,13 @@ $(window).scroll(function(){
 });
 let root = document.documentElement;
 function changeColor(color) {
-  //window.location.hash = color;
+  window.location.hash = '';
   colorpage = color;
   root.style.setProperty('--main-color', colorpage);
 }
 $(document).ready(function(){
   $("#fixedbutton2").click(function(){
+    window.location.hash = '';
     $("#box").slideToggle();
   });
 });
