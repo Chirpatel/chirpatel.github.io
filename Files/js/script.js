@@ -2,7 +2,7 @@ var colorpage = localStorage.getItem("colorpage");
 
 function fadeout(){
     color();
-    $(".preload").fadeOut(1000);
+    $(".preload").fadeOut(1500);
     $('body,html').css('overflow','visible');
     move();
 }
@@ -44,13 +44,17 @@ function move(){
 }
 $(document).ready(function(){
   color();
-  //$('.loader').toggle();
-  $('.loader').fadeIn(1);
+  $('.loadingio-spinner-dual-ring-vfuhar7q0dc').fadeIn(1);
     $("a").on('click', function(event) {
-      if (this.hash !== "") {
+      if (this.hash !== "" ) {
         var hash = this.hash;
         //console.log(hash);
-        if(hash.charAt(1)!='1'){
+        console.log(hash);
+        if(this.hash=='#pallete'){
+          event.preventDefault();
+          window.location.hash='';
+        }
+        else if(hash.charAt(1)!='1'){
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $(hash).offset().top
@@ -58,6 +62,7 @@ $(document).ready(function(){
           //window.location.hash = hash;
         });
       }
+
       else{
         event.preventDefault();
         //console.log(event.target.href+colorpage);
