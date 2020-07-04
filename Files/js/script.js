@@ -1,4 +1,4 @@
-var colorpage="#00e5e5";
+var colorpage = localStorage.getItem("colorpage");
 
 function fadeout(){
     color();
@@ -95,6 +95,7 @@ $(window).scroll(function(){
 let root = document.documentElement;
 function changeColor(color) {
   window.location.hash = '';
+  localStorage.setItem("colorpage", color);
   colorpage = color;
   root.style.setProperty('--main-color', colorpage);
 }
