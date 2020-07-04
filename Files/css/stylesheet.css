@@ -88,6 +88,7 @@ button.btn-outline-success:hover {
 }
 #fixedbutton2{
     right:3%;
+    z-index:999;
 }
 #fixedbutton2 a i{
     color: var(--main-color);
