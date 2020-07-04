@@ -89,8 +89,12 @@ button.btn-outline-success:hover {
 #fixedbutton2{
     right:3%;
 }
+#fixedbutton2 a i{
+    color: var(--main-color);
+}
 #fixedbutton1{
 right: 7%;
+color: var(--main-color);
 }
 #fixedbutton1,#fixedbutton2 {
     position: fixed;
@@ -696,7 +700,7 @@ th,td{
         right:1%;
     }
     #fixedbutton2{
-        bottom: 14%;
+        bottom: 11%;
         right: 1%;
     }
     div.box{
@@ -907,11 +911,10 @@ th,td{
 }
 
 div.box {
-    position: fixed;
     border: none;
     border-radius:25px;
     right:3%;
-    bottom:65px;
+    bottom:75px;
     display:none;
   }
   
