@@ -619,8 +619,9 @@ h2 {
     margin-right: auto;
 }
 .aboutdesp>p{
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
+    font-size:20px;
 }
 .pddesp>p{
     font-size: 20px;
