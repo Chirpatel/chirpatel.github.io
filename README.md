@@ -1,3 +1,3 @@
 # chirpatel.github.io
 
-[Portfolio](https://chirpatel.github.io) Link
+[Portfolio](https://chir.in) Link
