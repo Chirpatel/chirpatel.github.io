@@ -86,5 +86,5 @@ let chromeAgent =  userAgentString.indexOf("Chrome") > -1;
 if ((chromeAgent) && (safariAgent)) safariAgent = false; 
 
 if(safariAgent){
-  alert('The site is under Construction for Safari. You can open in Chrome and Firefox for better Responsiveness.');
+  alert('The site is under Construction.');
 }
