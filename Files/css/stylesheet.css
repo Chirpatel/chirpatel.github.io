@@ -134,7 +134,7 @@ color: var(--main-color);
     position: relative;
     margin: auto;
     width: -moz-available;
-    width: -webkit-fill-available;
+    width: 100%;
     top: -25px;
 }
 .innerimg{
@@ -147,7 +147,8 @@ color: var(--main-color);
 }
 .partonediv {
     
-    height: 100%;height:-moz-available;
+    height: 100%;
+    height:-moz-available;
     display: grid;
     align-items: center;
     color: white;
@@ -657,7 +658,7 @@ th,td{
         display: block;
         position: relative;
         margin: auto;
-        width: -webkit-fill-available;
+        width: 100%;
         top: -20px;
     }
     .innerimg{
@@ -728,7 +729,7 @@ th,td{
         display: block;
         position: relative;
         margin: auto;
-        width: -webkit-fill-available;
+        width: 100%;
         top: -40px;
     }
     .innerimg{
