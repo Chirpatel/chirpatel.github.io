@@ -76,25 +76,3 @@ $(document).ready(function(){
     $("#box").slideToggle();
   });
 });
-
-
-let userAgentString =  navigator.userAgent;
-// Detect Safari 
-let safariAgent = userAgentString.indexOf("Safari") > -1; 
-let chromeAgent =  userAgentString.indexOf("Chrome") > -1; 
-
-let IExplorerAgent =  
-                userAgentString.indexOf("MSIE") > -1 ||  
-                userAgentString.indexOf("rv:") > -1; 
-          
-            // Detect Firefox 
-let firefoxAgent =  
-                userAgentString.indexOf("Firefox") > -1; 
-  console.log(chromeAgent,safariAgent,IExplorerAgent,firefoxAgent)
-// Discard Safari since it also matches Chrome 
-if ((chromeAgent) && (safariAgent)) safariAgent = false; 
-
-if(safariAgent){
-  //alert('The site is under Construction.');
-  console.log(chromeAgent,safariAgent)
-}
