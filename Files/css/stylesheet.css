@@ -133,6 +133,7 @@ color: var(--main-color);
     display: block;
     position: relative;
     margin: auto;
+    width: -moz-available;
     width: -webkit-fill-available;
     top: -25px;
 }
@@ -145,7 +146,8 @@ color: var(--main-color);
     margin-left:70px;
 }
 .partonediv {
-    height: 100%;
+    
+    height: 100%;height:-moz-available;
     display: grid;
     align-items: center;
     color: white;
