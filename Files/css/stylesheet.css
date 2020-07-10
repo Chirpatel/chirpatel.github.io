@@ -653,7 +653,9 @@ th,td{
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .main{
+        flex-wrap:wrap-reverse;
+    }
     .profile {
         display: block;
         position: relative;
@@ -722,6 +724,9 @@ th,td{
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
+    .main{
+        flex-wrap:wrap-reverse;
+    }
     .aboutdesp>p{
         font-size:18px;
     }
