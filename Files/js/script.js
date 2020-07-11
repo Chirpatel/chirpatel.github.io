@@ -8,7 +8,10 @@ function fadeout(){
 function toggle(){
     $(".fa-bars").toggleClass("fa-times");
 }
-
+$('.navbar-collapse ul li a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+  $(".fa-bars").toggleClass("fa-times");
+});
 function color(){
   root.style.setProperty('--main-color', colorpage);
 }

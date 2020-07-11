@@ -19,9 +19,9 @@
   <div class="preload"><div class="loadingio-spinner-dual-ring-vfuhar7q0dc"><div class="ldio-toifw07oqb">
     <div></div><div><div></div></div>
     </div></div></div>
-  <nav id="main" class="navbar  navbar-expand-lg ">
+  <nav id="main" class="navbar  navbar-expand-lg sticky">
     <a class="navbar-brand icon" href="/"><span>< </span>Chir <span>/></span></a>
-    <button onClick="toggle()" style='outline: none;' class=" navbar-toggler" type="button" data-toggle="collapse"
+    <button id='tbtn' onClick="toggle()" style='outline: none;' class=" navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
       aria-label="Toggle navigation">
       <span style="color: white;"><i id="main1" class="fas fa-bars"></i></span>
@@ -60,7 +60,7 @@
     </div>
   </nav>
   <div>
-    <a href="#main"><i id="fixedbutton1" class="far fa-2x fa-arrow-alt-circle-up"></i></a>
+    <a href="#top1"><i id="fixedbutton1" class="far fa-2x fa-arrow-alt-circle-up"></i></a>
   </div>
   <div id="fixedbutton2">
 
@@ -78,7 +78,7 @@
     </div>
     <a href="#pallete"><i  class="fas fa-2x fa-palette"></i></a>
   </div>
-  <div class='partfour container'>
+  <div id='top1'class='partfour container m'>
     <div class='projectstopic'>
       <div class="projectname">
         <span>Projects</span>
@@ -86,6 +86,24 @@
       </div>
       
       <div class='prows'>
+        <div class="pcard1">
+          <div class='section1'>Recipe Adda</div>
+          <div class='section2'>
+            <p>The Recipe Adda is created so that the user can search for any recipes related to the ingredients. the user will get the steps, nutrition and ingredients required. The <a href='https://www.yummly.com/' target='_blank'>yummly</a> API has been used to get all the details with respect to the user query. The React app is deployed on Netlify.   </p>
+
+          </div>
+          <div class='section3'>
+            <div class='subtopics'>ReactJs</div>
+            <div class='subtopics'>Axios</div>
+
+          </div>
+          <div class='section4'>
+            <a target="_blank" href='https://github.com/Chirpatel/Recipe-Adda'><i
+                class="fab fa-1x fa-github"></i></a>
+            <a target="_blank" href='https://receipe-adda.netlify.app/'><i class="fas fa-1x fa-share-square"></i></a>
+          </div>
+
+        </div>
         <div class="pcard1">
           <div class='section1'>Hacker News</div>
           <div class='section2'>
@@ -108,7 +126,7 @@
         <div class="pcard1">
           <div class='section1'>Weather App</div>
           <div class='section2'>
-            <p>The weather app is a Progressive Web App. The app is created using ReactJS and Axios. The app hits <a target="_blank" href="https://openweathermap.org/api">openweathermap</a> API to get the city weatehr entered by the user. The weather app is deployed on netlify platform.</p>
+            <p>The weather app is a Progressive Web App. The app is created using ReactJS and Axios. The app hits <a target="_blank" href="https://openweathermap.org/api">openweathermap</a> API to get the city weather entered by the user. The weather app is deployed on netlify platform.</p>
 
           </div>
           <div class='section3'>

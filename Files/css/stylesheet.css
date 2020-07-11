@@ -13,7 +13,16 @@
     --card-color: #eeeeee;
     --card-highlight: #393e46;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+  }
+.m{
+    margin-top:60px !important;
+}
 body {
     font-family: myFirstFont;
     background-color: black;
@@ -161,7 +170,9 @@ color: var(--main-color);
 .partone {
     padding: 10px;
 }
-
+.line1{
+    margin-bottom:60px !important;
+}
 .line,
 .line1,
 .line2,
@@ -170,6 +181,7 @@ color: var(--main-color);
     height: 3px;
     background-color: var(--main-color);
     margin-bottom: 10px;
+    
 }
 
 .line {
