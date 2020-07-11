@@ -111,7 +111,9 @@ color: var(--main-color);
     bottom: 5%;
     color: var(--main-color);
 }
-
+#main{
+    box-shadow:0 8px 8px var(--main-color);
+}
 .nav-item {
     margin-left: 10px;
 }
@@ -481,6 +483,7 @@ h2 {
 }
 
 .main {
+    
     width: 100%;
     display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -665,6 +668,9 @@ th,td{
 }
 
 @media only screen and (max-width: 600px) {
+    #main{
+        box-shadow:0 6px 8px var(--main-color);
+    }
     .main{
         flex-wrap:wrap-reverse;
     }
