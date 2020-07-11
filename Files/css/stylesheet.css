@@ -310,12 +310,15 @@ h2 {
     align-items: center;
     height: 100%;
 }
-
+.partthree,
+.partfive{
+    margin-bottom: 60px !important;
+}
 .partthree,
 .partfour,
 .partfive {
     color: white;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 
