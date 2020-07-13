@@ -394,7 +394,7 @@ h2 {
     font-family: myFirstFontBold;
 }
 
-.prows {
+.prows,.researchcard {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -406,7 +406,7 @@ h2 {
 
 .pcard1 {
     height: 480px;
-    width: 19rem;
+    width: calc((100% - 60px)/3);
     background-color: var(--card-color);
     margin: 10px !important;
     display: grid;
@@ -433,9 +433,11 @@ h2 {
 }
 
 .section1 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: myFirstFontBold;
-    height: 90px;
+    line-height: 25px;
+    margin: auto;
+    height: 50px;
 }
 
 .section3 {
@@ -568,11 +570,12 @@ h2 {
     background-color: var(--card-color);
     color: black;
     padding: 10px;
-    margin: 20px auto;
     border-radius: 5px;
     border: 3px solid var(--card-highlight);
     box-shadow: 0 2px 12px 0 var(--main-color);
-    width: 50%;
+    width: 40%;
+    margin: 10px !important;
+    position: relative;
 }
 
 .research:hover {
@@ -585,25 +588,25 @@ h2 {
 
 }
 
-.research>span {
-    font-size: 30px;
+.researchTitle {
+    font-size: 25px;
     font-family: myFirstFontBold;
-    line-height: 1.1;
+    line-height: 25px;
+    margin: auto;
 }
 
-.research>p {
+.researchabst{
     text-align: justify;
+    margin-bottom:20px;
 }
 
-.research>a {
+.researchlink>a {
     color: black;
+    position:absolute;
+    bottom:0px;
 }
 
-.research>a:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    transition: 0.2s ease;
+.research:hover {
     cursor: pointer;
 }
 
@@ -670,6 +673,10 @@ th,td{
 }
 
 @media only screen and (max-width: 600px) {
+    .pcard1 {
+        height: 480px;
+        width: 100%;
+    }
     #main{
         box-shadow:0 2px 15px var(--main-color);
     }
@@ -744,6 +751,10 @@ th,td{
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
+    .pcard1 {
+        height: 480px;
+        width: calc((100% - 40px)/2);
+    }
     .main{
         flex-wrap:wrap-reverse;
     }
@@ -780,7 +791,7 @@ th,td{
     }
 
     .research {
-        width: 100%;
+        width: 45%;
     }
 
     h2 {
