@@ -779,6 +779,7 @@ th,td{
     .main{
         flex-wrap:wrap-reverse;
     }
+    
     .aboutdesp>p{
         font-size:18px;
     }
