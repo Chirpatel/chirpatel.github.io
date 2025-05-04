@@ -41,13 +41,9 @@
     z-index: 1;
 }
 
-/* .page .navbar .lefticon .shadow:hover {
-    transform: translateX(70%);
-    transition: all 0.5s ease;
-} */
-
 .page .navbar .lefticon .icon:hover {
     position: relative;
+    cursor: pointer;
 }
 
 .page .navbar .lefticon .icon span {
@@ -68,4 +64,12 @@
     visibility: visible;
     transform: translateY(0%);
     transition: all 0.5s ease;
+}
+
+.page .navbar .righticon .themetoggle,
+.page .navbar .righticon .resume {
+    all: unset;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }

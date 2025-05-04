@@ -108,7 +108,7 @@ export default function Home() {
 
                 >
 
-                <button type="button" onClick={() => toggleThemeFunc()}> <HugeiconsIcon icon={
+                <button className="themetoggle" type="button" onClick={() => toggleThemeFunc()}> <HugeiconsIcon icon={
                     isDarkMode ? Moon02Icon : Sun03Icon
                 }
 
@@ -118,7 +118,7 @@ export default function Home() {
 
                 /> </button>
 
-                <div className="resume"><HugeiconsIcon icon={
+                <button className="resume" type="button" ><HugeiconsIcon icon={
                     Pdf02Icon
                 }
 
@@ -126,7 +126,7 @@ export default function Home() {
                         iconSize
                     }
 
-                /></div> </div> </div> </div> </div>)
+                /></button> </div> </div> </div> </div>)
 }
 
 
