@@ -1,29 +1,128 @@
-import { AddToListIcon, Call02Icon, Home02Icon, Pdf02Icon, RepositoryIcon, UserCircle02Icon, WorkHistoryIcon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
-import React from "react";
+"use client";
+import {
+    AddToListIcon,
+    Call02Icon,
+    Home02Icon,
+    Moon02Icon,
+    Pdf02Icon,
+    RepositoryIcon,
+    Sun03Icon,
+    UserCircle02Icon,
+    WorkHistoryIcon
+}
+
+    from "@hugeicons/core-free-icons";
+import {
+    HugeiconsIcon
+}
+
+    from "@hugeicons/react";
+
+import React,
+{
+    useState
+}
+
+    from "react";
+import "./home.css";
+import { motion, spring } from "framer-motion";
+const iconSize = 30;
+
 
 export default function Home() {
-    return (
-        <div>
-            <h1>Template 1</h1>
-            <p>This is the home page of Template 1.</p>
-            <p>Welcome to the template!</p>
-            <p>Feel free to customize it as you like.</p>
-            <p>Enjoy your coding journey!</p>
-            <div className="page">
-                <div className="navbar">
-                    <div className="left-icon">
-                        <div className="home"><HugeiconsIcon icon={Home02Icon} /></div>
-                        <div className="aboutme"><HugeiconsIcon icon={UserCircle02Icon} /></div>
-                        <div className="skills"><HugeiconsIcon icon={AddToListIcon} /></div>
-                        <div className="experience"><HugeiconsIcon icon={WorkHistoryIcon} /></div>
-                        <div className="projects"><HugeiconsIcon icon={RepositoryIcon} /></div>
-                        <div className="contact"><HugeiconsIcon icon={Call02Icon} /></div>
-                        <div className="resume"><HugeiconsIcon icon={Pdf02Icon} /></div>
-                    </div>
-                    <div className="right-icon"></div>
-                </div>
-            </div>
-        </div>
-    )
+    const [currentOffsetValue, setCurrentOffsetValue] = React.useState({ old: 4, new: 4 });
+    const onhover = (offsetValue: number) => {
+        setCurrentOffsetValue({ old: currentOffsetValue.new, new: offsetValue - 6 });
+    }
+    return (<div><div className="page"
+
+    > <div className="navbar"
+
+    > <div className="lefticon">
+                <motion.div className="shadow"
+                    style={{ x: currentOffsetValue.new, rotate: 0 }}
+                    transformTemplate={
+                        ({ x, rotate }) => `rotate(${rotate}) translateX(${x})`
+                    }
+                    animate={{
+                        x: [currentOffsetValue.old, currentOffsetValue.new],
+                        transition: { ease: ["easeIn"] }
+                    }}
+                >
+                </motion.div>
+                <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    Home02Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /><span>Home</span></div> <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    UserCircle02Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /> <span>About Me</span> </div> <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    AddToListIcon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /><span>Skills</span></div> <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    WorkHistoryIcon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /><span>Experience</span></div> <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    RepositoryIcon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /><span>Projects</span></div> <div className="icon" onMouseEnter={(data: React.MouseEvent<HTMLDivElement>) => { onhover(data.currentTarget.offsetLeft); }}><HugeiconsIcon icon={
+                    Call02Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /><span>Contact</span></div> </div> <div className="righticon"
+
+                > <div className="resume"><HugeiconsIcon icon={
+                    Sun03Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /></div> <div className="resume"><HugeiconsIcon icon={
+                    Moon02Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /></div> <div className="resume"><HugeiconsIcon icon={
+                    Pdf02Icon
+                }
+
+                    size={
+                        iconSize
+                    }
+
+                /></div> </div> </div> </div> </div>)
 }
