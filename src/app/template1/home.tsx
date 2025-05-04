@@ -18,14 +18,12 @@ import {
 
     from "@hugeicons/react";
 
-import React,
-{
-    useState
-}
+import React
 
     from "react";
 import "./home.css";
 import { motion, spring } from "framer-motion";
+import { toggleTheme } from "../theme/toggleTheme";
 const iconSize = 30;
 
 
@@ -34,11 +32,19 @@ export default function Home() {
     const onhover = (offsetValue: number) => {
         setCurrentOffsetValue({ old: currentOffsetValue.new, new: offsetValue - 6 });
     }
+    const [isDarkMode, setIsDarkMode] = React.useState(false);
+    const toggleThemeFunc1 = toggleTheme();
+    const toggleThemeFunc = () => {
+        setIsDarkMode(!isDarkMode);
+        toggleThemeFunc1();
+    }
+
+
     return (<div><div className="page"
 
     > <div className="navbar"
 
-    > <div className="lefticon">
+    > <div className="lefticon" onMouseLeave={(data: React.MouseEvent<HTMLDivElement>) => { onhover(10); }}>
                 <motion.div className="shadow"
                     style={{ x: currentOffsetValue.new, rotate: 0 }}
                     transformTemplate={
@@ -100,23 +106,19 @@ export default function Home() {
 
                 /><span>Contact</span></div> </div> <div className="righticon"
 
-                > <div className="resume"><HugeiconsIcon icon={
-                    Sun03Icon
+                >
+
+                <button type="button" onClick={() => toggleThemeFunc()}> <HugeiconsIcon icon={
+                    isDarkMode ? Moon02Icon : Sun03Icon
                 }
 
                     size={
                         iconSize
                     }
 
-                /></div> <div className="resume"><HugeiconsIcon icon={
-                    Moon02Icon
-                }
+                /> </button>
 
-                    size={
-                        iconSize
-                    }
-
-                /></div> <div className="resume"><HugeiconsIcon icon={
+                <div className="resume"><HugeiconsIcon icon={
                     Pdf02Icon
                 }
 
@@ -126,3 +128,5 @@ export default function Home() {
 
                 /></div> </div> </div> </div> </div>)
 }
+
+
