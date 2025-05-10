@@ -1,7 +1,7 @@
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 import Template1 from "./template1/layout";
-import Template2 from "./template2/home";
-import Template3 from "./template3/home";
+// import Template2 from "./template2/home";
+// import Template3 from "./template3/home";
 
 const components: { [key: number]: React.ComponentType } = {
   0: Template1,

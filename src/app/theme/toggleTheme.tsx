@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export function toggleTheme() {
+export function ToggleTheme() {
     const [theme, setTheme] = useState('light');
 
     useEffect(() => {

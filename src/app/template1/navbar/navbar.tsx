@@ -24,14 +24,13 @@ import React from "react";
 import "./navbar.scss";
 
 import {
-    motion,
-    spring
+    motion
 }
 
     from "framer-motion";
 
 import {
-    toggleTheme
+    ToggleTheme
 }
 
     from "../../theme/toggleTheme";
@@ -57,7 +56,7 @@ export default function Home() {
 
     const [isDarkMode,
         setIsDarkMode] = React.useState(false);
-    const toggleThemeFunc1 = toggleTheme();
+    const toggleThemeFunc1 = ToggleTheme();
 
     const toggleThemeFunc = () => {
         setIsDarkMode(!isDarkMode);
@@ -70,7 +69,7 @@ export default function Home() {
     > <div className="navbar"
 
     > <div className="lefticon" onMouseLeave={
-        (data: React.MouseEvent<HTMLDivElement>) => {
+        () => {
             onhover(10);
         }
     }
