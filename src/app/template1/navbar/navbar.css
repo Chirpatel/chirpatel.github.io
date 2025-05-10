@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.page .navbar .lefticon .icon {
+.page .navbar .icon {
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
@@ -32,7 +32,7 @@
     z-index: 5;
 }
 
-.page .navbar .lefticon .shadow {
+.page .navbar .shadow {
     height: 42px;
     width: 42px;
     background-color: var(--color-fourth);
@@ -41,12 +41,12 @@
     z-index: 1;
 }
 
-.page .navbar .lefticon .icon:hover {
+.page .navbar .icon:hover {
     position: relative;
     cursor: pointer;
 }
 
-.page .navbar .lefticon .icon span {
+.page .navbar .icon span {
     visibility: hidden;
     background-color: var(--color-hover-background);
     color: var(--color-hover-text);
@@ -60,16 +60,21 @@
     transform: translateY(70%);
 }
 
-.page .navbar .lefticon .icon:hover span {
+.page .navbar .icon:hover span {
     visibility: visible;
     transform: translateY(0%);
     transition: all 0.5s ease;
 }
 
-.page .navbar .righticon .themetoggle,
-.page .navbar .righticon .resume {
+.page .navbar .righticon .icon button {
     all: unset;
-    margin-right: 10px;
-    margin-left: 10px;
     cursor: pointer;
+    text-align: center;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.page .navbar .righticon .icon:hover button {
+    box-shadow: inset var(--color-fourth) 0px 0px 3px 20px;
 }
